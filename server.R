@@ -26,8 +26,6 @@ shinyServer(function(input, output) {
         if(input$showModel){
             abline(model(), col = "red", lwd = 2)
         }
-        legend(25, 250, c("Model Prediction"), pch = 16,
-               col = c("red", "blue"), bty = "n", cex = 1.2)
         points(sepalInput, modelpred(), col = "red", pch = 16, cex = 2)
     })
     
